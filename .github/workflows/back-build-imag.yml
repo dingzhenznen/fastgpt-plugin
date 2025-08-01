@@ -98,11 +98,6 @@ jobs:
           GITHUB_LATEST="ghcr.io/${{ github.repository_owner }}/fastgpt-plugin:latest"
           GITHUB_SHA="ghcr.io/${{ github.repository_owner }}/fastgpt-plugin:${{ github.sha }}"
 
-
-          ALI_TAG="${{ secrets.ALI_IMAGE_NAME }}/fastgpt-plugin:${{ github.ref_name }}"
-          ALI_LATEST="${{ secrets.ALI_IMAGE_NAME }}/fastgpt-plugin:latest"
-          ALI_SHA="${{ secrets.ALI_IMAGE_NAME }}/fastgpt-plugin:${{ github.sha }}"
-
           # Create array of all tags
           TAGS="$GITHUB_TAG $GITHUB_LATEST $GITHUB_SHA $ALI_TAG $ALI_LATEST $ALI_SHA $DOCKER_TAG $DOCKER_LATEST $DOCKER_SHA"
 
