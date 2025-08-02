@@ -7,8 +7,6 @@ import { isProd } from './constants';
 import { initS3Server } from './s3/config';
 import { connectSignoz } from './utils/signoz';
 import { initModels } from '@model/init';
-import setupProxy from './utils/proxy';
-setupProxy();
 
 const app = express().use(
   express.json(),
